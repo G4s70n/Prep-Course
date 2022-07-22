@@ -207,11 +207,7 @@ function sumarLikesDeUsuario(usuario) {
 }
 
 const userPosts = {
-  posts: [
-    { likes: 34 }, 
-    { likes: 56 }, 
-    { likes: 13 }
-],
+  posts: [{ likes: 34 }, { likes: 56 }, { likes: 13 }],
 };
 
 sumarLikesDeUsuario(userPosts);
@@ -226,23 +222,22 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  let addFunction =  {
-    
-    calcularPrecioDescuento: function (){
+  let addFunction = {
+    calcularPrecioDescuento: function () {
       let descuento = this.precio * this.porcentajeDeDescuento;
       let precioFinal = this.precio - descuento;
       return precioFinal;
-    }
-    };
+    },
+  };
 
-    producto = Object.assign(producto, addFunction)
+  producto = Object.assign(producto, addFunction);
   producto.calcularPrecioDescuento();
   return producto;
-};
+}
 
 const producto = {
   precio: 572,
-  porcentajeDeDescuento: .2,
+  porcentajeDeDescuento: 0.2,
 };
 
 agregarMetodoCalculoDescuento(producto);
