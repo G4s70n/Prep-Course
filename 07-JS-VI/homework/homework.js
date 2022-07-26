@@ -60,7 +60,7 @@ function map(array, cb) {
   return newArray;
 }
 
-let arreglo = [23, 65, 50, 18];
+let arreglo = [23, 30, 50, 18];
 
 
 
