@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.body-cv {
+  border: 1px solid red;
+  min-width: 320px;
+  padding: 1em;
+}
+
+.main-cv {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 40px black;
+  border-radius: 5px;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.marco-foto {
+  border: 5px solid #bc356f;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  order: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagen-perfil {
+  width: 220px;
+}
+
+.h1 {
+  text-align: center;
+  color: #bc356f;
+  font-size: 1.8rem;
+}
+
+.sub-h1 {
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+}
+
+.p-h1 {
+  font-size: 0.9rem;
+  padding-bottom: 1em;
+  color: black;
+}
+
+.foto {
+  order: 1;
+  z-index: 10;
+}
+
+.personal-description {
+  order: 2;
+  background-color: #cebbc554;
+  padding-left: 2em;
+  padding: 3em 1.5em 0em 1.5em;
+  margin-top: -4em;
+}
+
+.personal-info {
+  order: 3;
+  background-color: #2b0442;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0 2em 0;
+}
+
+.dato {
+  width: 100%;
+  color: #bc356f;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.dato-descrip {
+  width: 100%;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.4em 0.7em 1.2em 0.7em;
+}
+
+.dato-descrip:hover {
+  background-color: #f395be5c;
+}
+
+.historial-laboral-educacion {
+  order: 4;
+  padding-right: 1em;
+}
+
+.historial-laboral-educacion h2 {
+  text-align: center;
+  color: #bc356f;
+  font-size: 1.7rem;
+}
+
+.historial-laboral-educacion h3 {
+  background-color: #2b0442;
+  padding: 0.5em 1em 0.5em 1em;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 0 20px 20px 0;
+  border-bottom: 3px solid #bc356f;
+}
+
+.historial-laboral-educacion span {
+  font-size: 0.8em;
+  display: inline-block;
+  width: 200px;
+  font-weight: lighter;
+}
+
+.historial-laboral-educacion p {
+  font-size: 0.8em;
+  padding: 0em 1em 0.5em 1.5em;
+}
+
+#sub-estudios {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 35em) {
+  .main-cv {
+    flex-direction: row;
+    position: relative;
+    padding-bottom: 0;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .personal-info {
+    order: 1;
+    margin-top: 170px;
+    padding-top: 4em;
+    z-index: 5;
+    width: 22em;
+    margin-top: 7em;
+  }
+
+  .foto {
+    position: absolute;
+    width: 34%;
+  }
+
+  .personal-description {
+    position: absolute;
+    padding-left: 36%;
+  }
+
+  .historial-laboral-educacion {
+    margin-top: 13em;
+  }
+
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
